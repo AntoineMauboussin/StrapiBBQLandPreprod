@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "rp_top3_lps",
+  "info": {
+    "name": "RP_Top3LP",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Intro": {
+      "type": "text"
+    },
+    "Fin": {
+      "type": "text"
+    },
+    "section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "produit.top3-section",
+      "max": 3
+    },
+    "text_seo_1": {
+      "type": "text"
+    },
+    "text_seo_2": {
+      "type": "text"
+    }
+  }
+}

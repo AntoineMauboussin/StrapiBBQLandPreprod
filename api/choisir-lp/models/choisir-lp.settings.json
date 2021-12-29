@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "choisir_lps",
+  "info": {
+    "name": "BL_ChoisirLP",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Pages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-questionnaire.choisir-page",
+      "max": 4,
+      "min": 4,
+      "required": true
+    },
+    "meta_titre": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "text"
+    },
+    "titre_quel_barbecue_choisir": {
+      "type": "string"
+    },
+    "titre_bbqland_vous_aide": {
+      "type": "string"
+    },
+    "titre_meilleur_resultat": {
+      "type": "string"
+    },
+    "titre_autres_modeles": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "richtext"
+    },
+    "decouverte": {
+      "type": "richtext"
+    },
+    "conclusion": {
+      "type": "richtext"
+    },
+    "text_seo_1": {
+      "type": "richtext"
+    },
+    "text_seo_2": {
+      "type": "richtext"
+    }
+  }
+}

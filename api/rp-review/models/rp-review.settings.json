@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rp_reviews",
+  "info": {
+    "name": "RP_Review"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "note": {
+      "type": "integer",
+      "max": 5,
+      "min": 0,
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "auteur": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "rp_produit": {
+      "via": "reviews",
+      "model": "rp-produit"
+    }
+  }
+}

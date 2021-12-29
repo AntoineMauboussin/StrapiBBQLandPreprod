@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_produit_top5_sections",
+  "info": {
+    "name": "top5_section",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Categorie": {
+      "type": "string"
+    },
+    "produit": {
+      "model": "produit"
+    },
+    "alimentation": {
+      "type": "text"
+    },
+    "facilite_allumage": {
+      "type": "text"
+    },
+    "entretien": {
+      "type": "text"
+    },
+    "dimension": {
+      "type": "text"
+    },
+    "accessoires": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_marque_gammes",
+  "info": {
+    "name": "Gamme",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

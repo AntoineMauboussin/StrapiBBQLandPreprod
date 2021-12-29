@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/choisir-lp",
+      "handler": "choisir-lp.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/choisir-lp",
+      "handler": "choisir-lp.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/choisir-lp",
+      "handler": "choisir-lp.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

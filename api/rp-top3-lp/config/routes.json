@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rp-top-3-lp",
+      "handler": "rp-top3-lp.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rp-top-3-lp",
+      "handler": "rp-top3-lp.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rp-top-3-lp",
+      "handler": "rp-top3-lp.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

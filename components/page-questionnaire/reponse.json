@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_page_questionnaire_reponses",
+  "info": {
+    "name": "Reponse",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "reponse": {
+      "type": "string",
+      "required": true
+    },
+    "produits": {
+      "collection": "produit"
+    }
+  }
+}

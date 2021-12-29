@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rp-marques",
+      "handler": "rp-marque.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rp-marques/count",
+      "handler": "rp-marque.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rp-marques/:id",
+      "handler": "rp-marque.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rp-marques",
+      "handler": "rp-marque.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rp-marques/:id",
+      "handler": "rp-marque.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rp-marques/:id",
+      "handler": "rp-marque.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "marques",
+  "info": {
+    "name": "BL_Marque",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "produits": {
+      "collection": "produit"
+    },
+    "reviews": {
+      "collection": "review"
+    },
+    "gammes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "marque.gamme"
+    },
+    "meta_titre": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "text"
+    },
+    "titre_decouvrez_la_marque": {
+      "type": "string"
+    },
+    "titre_histoire_et_origines": {
+      "type": "string"
+    },
+    "titre_gammes": {
+      "type": "string"
+    },
+    "titre_meilleurs_barbecues": {
+      "type": "string"
+    },
+    "titre_reviews": {
+      "type": "string"
+    },
+    "titre_autres_marques": {
+      "type": "string"
+    },
+    "histoire": {
+      "type": "richtext"
+    },
+    "text_seo_1": {
+      "type": "richtext"
+    },
+    "text_seo_2": {
+      "type": "richtext"
+    }
+  }
+}

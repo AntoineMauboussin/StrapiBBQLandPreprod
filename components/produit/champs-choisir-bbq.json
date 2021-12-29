@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_produit_champs_choisir_bbqs",
+  "info": {
+    "name": "ChampsChoisirBBQ",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "nombre_couvert": {
+      "type": "string"
+    },
+    "combustible": {
+      "type": "string"
+    },
+    "pourquoi": {
+      "type": "text"
+    }
+  }
+}

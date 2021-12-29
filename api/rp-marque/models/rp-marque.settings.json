@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rp_marques",
+  "info": {
+    "name": "RP_Marque",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "histoire": {
+      "type": "text"
+    },
+    "appareils": {
+      "collection": "rp-produit"
+    },
+    "accessoires": {
+      "collection": "rp-produit"
+    },
+    "reviews": {
+      "collection": "rp-review"
+    },
+    "text_seo_1": {
+      "type": "text"
+    },
+    "text_seo_2": {
+      "type": "text"
+    }
+  }
+}

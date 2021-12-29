@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_produit_top3_sections",
+  "info": {
+    "name": "Top3_section",
+    "icon": "caret-right"
+  },
+  "options": {},
+  "attributes": {
+    "Categorie": {
+      "type": "string"
+    },
+    "produit": {
+      "model": "rp-produit"
+    },
+    "puissance": {
+      "type": "text"
+    },
+    "nombre_convives": {
+      "type": "text"
+    },
+    "entretien": {
+      "type": "text"
+    },
+    "accessoires": {
+      "type": "text"
+    },
+    "garantie": {
+      "type": "text"
+    },
+    "autres_usages": {
+      "type": "text"
+    }
+  }
+}

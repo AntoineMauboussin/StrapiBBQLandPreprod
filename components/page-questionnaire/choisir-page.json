@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_page_questionnaire_choisir_pages",
+  "info": {
+    "name": "choisirPage",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string"
+    },
+    "nombreDeReponses": {
+      "type": "integer",
+      "max": 5,
+      "min": 2,
+      "required": true
+    },
+    "Titre": {
+      "type": "string"
+    },
+    "reponses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-questionnaire.reponse"
+    }
+  }
+}

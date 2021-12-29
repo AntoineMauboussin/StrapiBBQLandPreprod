@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "name": "BL_Review",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "note": {
+      "max": 5,
+      "min": 0,
+      "type": "integer",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "auteur": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "produit": {
+      "via": "reviews",
+      "model": "produit"
+    }
+  }
+}

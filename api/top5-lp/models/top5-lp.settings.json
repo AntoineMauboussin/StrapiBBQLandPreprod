@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "top5_lps",
+  "info": {
+    "name": "BL_Top5LP",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "produit.top5-section",
+      "max": 5
+    },
+    "meta_titre": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "text"
+    },
+    "titre_top5_barbecues": {
+      "type": "string"
+    },
+    "titre_criteres_selection": {
+      "type": "string"
+    },
+    "titre_notre_selection": {
+      "type": "string"
+    },
+    "Intro": {
+      "type": "richtext"
+    },
+    "Fin": {
+      "type": "richtext"
+    },
+    "text_seo_1": {
+      "type": "richtext"
+    },
+    "text_seo_2": {
+      "type": "richtext"
+    }
+  }
+}

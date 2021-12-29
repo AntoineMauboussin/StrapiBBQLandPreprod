@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rp_produits",
+  "info": {
+    "name": "RP_Produit",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "prix": {
+      "type": "decimal",
+      "required": true
+    },
+    "note": {
+      "type": "integer",
+      "max": 5,
+      "min": 0
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "marque": {
+      "model": "rp-marque"
+    },
+    "reviews": {
+      "collection": "rp-review",
+      "via": "rp_produit"
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

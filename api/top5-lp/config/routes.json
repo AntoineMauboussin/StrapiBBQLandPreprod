@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/top-5-lp",
+      "handler": "top5-lp.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/top-5-lp",
+      "handler": "top5-lp.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/top-5-lp",
+      "handler": "top5-lp.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

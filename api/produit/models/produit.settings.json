@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produits",
+  "info": {
+    "name": "BL_Produit",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "prix": {
+      "type": "decimal",
+      "min": 0,
+      "required": true
+    },
+    "note": {
+      "type": "integer",
+      "max": 5,
+      "min": 0
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "reviews": {
+      "via": "produit",
+      "collection": "review"
+    },
+    "Optionnel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "produit.champs-choisir-bbq"
+    },
+    "marque": {
+      "model": "marque"
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
