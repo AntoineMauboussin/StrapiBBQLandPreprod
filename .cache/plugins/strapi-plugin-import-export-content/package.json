@@ -1,15 +1,38 @@
 {
-  "name": "strapi-plugin-import-export-content",
-  "version": "0.4.2",
-  "description": "This is a plugin for import and export content of collection types.",
-  "license": "MIT",
-  "strapi": {
-    "name": "Import / Export Content",
-    "icon": "sync-alt",
-    "description": "Import and Export your Content"
+  "_args": [
+    [
+      "strapi-plugin-import-export-content@0.4.2",
+      "/var/www/strapiBBQLand"
+    ]
+  ],
+  "_from": "strapi-plugin-import-export-content@0.4.2",
+  "_id": "strapi-plugin-import-export-content@0.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-Fdhcy4s07rDs3SoF2hP5kaDRKuYskaid029DxNuvl8PvQDlUUWiJNyEziopakH+xSvcnptkcaN2UmjJk71goWg==",
+  "_location": "/strapi-plugin-import-export-content",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "strapi-plugin-import-export-content@0.4.2",
+    "name": "strapi-plugin-import-export-content",
+    "escapedName": "strapi-plugin-import-export-content",
+    "rawSpec": "0.4.2",
+    "saveSpec": null,
+    "fetchSpec": "0.4.2"
   },
-  "scripts": {
-    "test": "echo \"No test specified\""
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-import-export-content/-/strapi-plugin-import-export-content-0.4.2.tgz",
+  "_spec": "0.4.2",
+  "_where": "/var/www/strapiBBQLand",
+  "author": {
+    "name": "Edison Peñuela",
+    "email": "edisonpe961206@hotmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/EdisonPeM/strapi-plugin-import-export-content/issues"
   },
   "dependencies": {
     "csv-parse": "^4.15.3",
@@ -17,18 +40,12 @@
     "prismjs": "^1.23.0",
     "react-simple-code-editor": "^0.11.0"
   },
-  "author": "Edison Peñuela <edisonpe961206@hotmail.com>",
-  "maintainers": [
-    "Edison Peñuela <edisonpe961206@hotmail.com>"
-  ],
+  "description": "This is a plugin for import and export content of collection types.",
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
     "npm": ">=6.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EdisonPeM/strapi-plugin-import-export-content.git"
-  },
+  "homepage": "https://github.com/EdisonPeM/strapi-plugin-import-export-content#readme",
   "keywords": [
     "strapi",
     "plugin",
@@ -38,8 +55,25 @@
     "export",
     "content"
   ],
-  "bugs": {
-    "url": "https://github.com/EdisonPeM/strapi-plugin-import-export-content/issues"
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Edison Peñuela",
+      "email": "edisonpe961206@hotmail.com"
+    }
+  ],
+  "name": "strapi-plugin-import-export-content",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdisonPeM/strapi-plugin-import-export-content.git"
   },
-  "homepage": "https://github.com/EdisonPeM/strapi-plugin-import-export-content#readme"
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "strapi": {
+    "name": "Import / Export Content",
+    "icon": "sync-alt",
+    "description": "Import and Export your Content"
+  },
+  "version": "0.4.2"
 }
